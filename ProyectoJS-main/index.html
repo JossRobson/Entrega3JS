@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Balenciaga</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<h1><img src="photos/Balenciaga-Logo.png" width="250" ></h1>
+	<div id="carrito">
+		<h2>Productos:</h2>
+		<ul>
+			<li>Camisa...............- $10000.00 <button onclick="agregarProducto('Producto 1', 10000)">Agregar al Carrito</button></li>
+			<li>Zapatillas..........- $29000.00 <button onclick="agregarProducto('Producto 2', 29000)">Agregar al Carrito</button></li>
+			<li>jean....- $13300.00 <button onclick="agregarProducto('Producto 3', 13300)">Agregar al Carrito</button></li>
+		</ul>
+		<h2>Carrito de Compras:</h2>
+		<ul id="lista-carrito">
+		</ul>
+		<div id="total-carrito">Total: $<span id="total">0.00</span></div>
+		<button onclick="finalizarCompra()">Comprar Ahora</button>
+	</div>
+	<script src="carrito.js"></script>
+</body>
+</html>
